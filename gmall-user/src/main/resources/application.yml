@@ -1,0 +1,13 @@
+spring:
+  datasource: #数据源配置
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://123.56.166.69:3306/gmall?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: s123654.
+#mybatisplus的配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*Mapper.xml
+server:
+  port: 8080
